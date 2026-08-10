@@ -1,459 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Rose Muthoni Komarek — African nurse, healthcare professional, mentor and leader in Germany.">
+    <meta
+        name="description"
+        content="Rose Muthoni Komarek — Healthcare Professional, Mentor, Integration Coach and Community Builder in Germany."
+    >
 
-    <meta name="author"
-        content="Rose Muthoni Komarek">
+    <meta
+        name="keywords"
+        content="Rose Komarek, African Nurses Germany, healthcare professional Germany, nursing, mentorship, integration coach"
+    >
 
-    <meta name="theme-color"
-        content="#0b3d5c">
+    <meta name="author" content="Rose Muthoni Komarek">
 
-    <title>
-        Rose Muthoni Komarek | African Nurse in Germany
-    </title>
+    <meta name="theme-color" content="#092d47">
+
+    <title>Rose Muthoni Komarek | Healthcare • Mentorship • Leadership</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet"
+    >
 
-    <!-- Font Awesome -->
+    <!-- Icons -->
     <link
         rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
 
-    <!-- CSS -->
-    <link rel="stylesheet"
-        href="style.css">
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
     <!-- =====================================================
-         SCROLL PROGRESS
+         PAGE LOADER
     ====================================================== -->
 
-    <div class="scroll-progress"
-        id="scrollProgress"></div>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-logo">
+            <img src="./image/logo.png" alt="Rose Komarek logo">
+        </div>
+        <div class="loader-line"></div>
+    </div>
 
 
     <!-- =====================================================
-         HEADER
+         HEADER / NAVIGATION
     ====================================================== -->
 
-    <header class="header"
-        id="header">
+    <header class="site-header" id="siteHeader">
 
-        <div class="container">
+        <div class="container nav-container">
 
-            <nav class="navbar">
+            <a href="#home" class="brand" aria-label="Rose Komarek home">
 
-                <!-- LOGO -->
+                <img
+                    src="./image/logo.png"
+                    alt="Rose Komarek logo"
+                    class="brand-logo"
+                >
 
-                <a href="#home"
-                    class="logo"
-                    aria-label="RMK Home">
-
-                    <img
-                        src="image/logo.png"
-                        alt="RMK African Nurse in Germany logo"
-                        class="logo-image">
-
-                    <div class="logo-text">
-
-                        <strong>RMK</strong>
-
-                        <span>
-                            African Nurse • Germany
-                        </span>
-
-                    </div>
-
-                </a>
-
-
-                <!-- NAVIGATION -->
-
-                <div class="nav-links"
-                    id="navLinks">
-
-                    <a href="#home"
-                        class="active">
-                        Home
-                    </a>
-
-                    <a href="#about">
-                        About
-                    </a>
-
-                    <a href="#journey">
-                        Journey
-                    </a>
-
-                    <a href="#expertise">
-                        Expertise
-                    </a>
-
-                    <a href="#gallery">
-                        Gallery
-                    </a>
-
-                    <a href="#testimonials">
-                        Testimonials
-                    </a>
-
-                    <a href="#organizations">
-                        Organizations
-                    </a>
-
+                <div class="brand-text">
+                    <span>ROSE</span>
+                    <small>MUTHONI KOMAREK</small>
                 </div>
 
-
-                <!-- DESKTOP CONTACT -->
-
-                <a href="contact.html"
-                    class="btn-nav">
-
-                    Contact
-
-                    <i class="fa-solid fa-arrow-right"></i>
-
-                </a>
+            </a>
 
 
-                <!-- THEME -->
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+
+                <a href="#home" class="nav-link active">Home</a>
+
+                <a href="#about" class="nav-link">About</a>
+
+                <a href="#journey" class="nav-link">Journey</a>
+
+                <a href="#expertise" class="nav-link">Expertise</a>
+
+                <a href="#impact" class="nav-link">Impact</a>
+
+                <a href="#gallery" class="nav-link">Gallery</a>
+
+                <a href="#contact" class="nav-link">Connect</a>
+
+            </nav>
+
+
+            <div class="nav-actions">
 
                 <button
                     class="theme-toggle"
                     id="themeToggle"
                     type="button"
-                    aria-label="Switch to dark mode">
-
+                    aria-label="Toggle dark mode"
+                    title="Toggle dark mode"
+                >
                     <i class="fa-solid fa-moon"></i>
-
                 </button>
 
-
-                <!-- MOBILE MENU -->
 
                 <button
-                    class="menu-btn"
-                    id="menuBtn"
+                    class="menu-toggle"
+                    id="menuToggle"
                     type="button"
                     aria-label="Open navigation menu"
-                    aria-expanded="false">
-
-                    <i class="fa-solid fa-bars"></i>
-
+                    aria-expanded="false"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
 
-            </nav>
+            </div>
 
         </div>
 
     </header>
 
 
-
-    <!-- =====================================================
-         MAIN
-    ====================================================== -->
-
     <main>
 
 
-        <!-- =================================================
+        <!-- =====================================================
              HERO
-        ================================================== -->
+        ====================================================== -->
 
-        <section class="hero"
-            id="home">
+        <section class="hero" id="home">
 
-            <div class="hero-decoration hero-decoration-one"></div>
+            <div class="hero-background"></div>
 
-            <div class="hero-decoration hero-decoration-two"></div>
-
-
-            <div class="container">
-
-                <div class="hero-grid">
+            <div class="hero-orb hero-orb-one"></div>
+            <div class="hero-orb hero-orb-two"></div>
 
 
-                    <!-- HERO CONTENT -->
+            <div class="container hero-grid">
 
-                    <div class="hero-content reveal">
+                <div class="hero-content">
 
-                        <span class="eyebrow">
-
-                            <i class="fa-solid fa-heart-pulse"></i>
-
-                            Healthcare • Leadership • Service
-
-                        </span>
+                    <span class="eyebrow">
+                        HEALTHCARE • MENTORSHIP • LEADERSHIP
+                    </span>
 
 
-                        <h1>
-
-                            Caring with
-                            <span>purpose.</span>
-
-                            Leading with
-                            <span>heart.</span>
-
-                        </h1>
+                    <h1>
+                        Caring for people.
+                        <span>Building possibilities.</span>
+                    </h1>
 
 
-                        <p class="hero-description">
-
-                            Rose Muthoni Komarek is an African nurse
-                            and healthcare professional building a
-                            meaningful career in Germany through
-                            compassionate care, professional growth
-                            and community impact.
-
-                        </p>
+                    <p class="hero-description">
+                        Rose Muthoni Komarek is a healthcare professional,
+                        mentor, integration coach and community builder
+                        dedicated to supporting people, strengthening
+                        professional connections and creating opportunities
+                        across Africa and Germany.
+                    </p>
 
 
-                        <div class="hero-actions">
+                    <div class="hero-buttons">
 
-                            <a href="#about"
-                                class="btn btn-primary">
+                        <a href="#about" class="btn btn-primary">
+                            Discover Her Story
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </a>
 
-                                Discover Her Story
-
-                                <i class="fa-solid fa-arrow-down"></i>
-
-                            </a>
-
-
-                            <a href="#contact" class="btn btn-secondary">
-    Get In Touch
-    <i class="fa-regular fa-envelope"></i>
-</a>
-
-                        </div>
-
-
-                        <!-- SOCIAL LINKS -->
-
-                        <div class="social-links">
-
-                            <a href="#"
-                                aria-label="LinkedIn">
-
-                                <i class="fa-brands fa-linkedin-in"></i>
-
-                            </a>
-
-                            <a href="#"
-                                aria-label="Instagram">
-
-                                <i class="fa-brands fa-instagram"></i>
-
-                            </a>
-
-                            <a href="#"
-                                aria-label="Facebook">
-
-                                <i class="fa-brands fa-facebook-f"></i>
-
-                            </a>
-
-                            <a href="#"
-                                aria-label="TikTok">
-
-                                <i class="fa-brands fa-tiktok"></i>
-
-                            </a>
-
-                        </div>
+                        <a href="#contact" class="btn btn-outline">
+                            Let's Connect
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
 
                     </div>
 
 
+                    <div class="hero-socials">
 
-                    <!-- HERO IMAGE -->
-
-                    <div class="hero-visual reveal">
-
-                        <div class="portrait-background"></div>
-
-                        <div class="portrait-ring"></div>
-
-
-                        <img
-                            src="image/profile.jpg"
-                            alt="Rose Muthoni Komarek"
-                            class="hero-profile">
+                        <a
+                            href="https://www.linkedin.com/in/rose-komarek-569296222/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Rose Komarek on LinkedIn"
+                        >
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
 
 
-                        <!-- FLOATING CARD -->
-
-                        <div class="floating-card card-top">
-
-                            <div class="floating-icon">
-
-                                <i class="fa-solid fa-heart-pulse"></i>
-
-                            </div>
-
-                            <div>
-
-                                <strong>
-                                    Compassionate Care
-                                </strong>
-
-                                <span>
-                                    People first
-                                </span>
-
-                            </div>
-
-                        </div>
+                        <a
+                            href="https://www.instagram.com/rose.peters.54/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Rose Komarek on Instagram"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
 
 
-                        <div class="floating-card card-bottom">
+                        <a
+                            href="https://www.facebook.com/rose.peters.54"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Rose Komarek on Facebook"
+                        >
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
 
-                            <div class="floating-icon gold">
 
-                                <i class="fa-solid fa-globe"></i>
-
-                            </div>
-
-                            <div>
-
-                                <strong>
-                                    African Excellence
-                                </strong>
-
-                                <span>
-                                    Germany
-                                </span>
-
-                            </div>
-
-                        </div>
+                        <a
+                            href="https://vm.tiktok.com/ZS9hGKvCPSj4f-oaMj1/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Rose Komarek on TikTok"
+                        >
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
 
                     </div>
 
                 </div>
 
 
+                <!-- HERO IMAGE -->
 
-                <!-- =================================================
-                     STATS
-                ================================================== -->
+                <div class="hero-visual">
 
-                <div class="stats-grid reveal">
+                    <div class="hero-image-frame">
+
+                        <div class="hero-image-glow"></div>
+
+                        <img
+                            src="./image/profile.jpg"
+                            alt="Rose Muthoni Komarek"
+                            class="hero-image"
+                        >
+
+                        <div class="hero-image-border"></div>
+
+                    </div>
 
 
-                    <div class="stat-card">
+                    <div class="floating-card floating-card-top">
 
-                        <div class="stat-icon">
-                            <i class="fa-solid fa-award"></i>
-                        </div>
+                        <span class="floating-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </span>
 
                         <div>
-
-                            <strong
-                                class="counter"
-                                data-target="16"
-                                data-suffix="+">
-                                0+
-                            </strong>
-
-                            <span>
-                                Years of Experience
-                            </span>
-
+                            <strong>Healthcare</strong>
+                            <small>Professional</small>
                         </div>
 
                     </div>
 
 
-                    <div class="stat-card">
+                    <div class="floating-card floating-card-bottom">
 
-                        <div class="stat-icon">
-                            <i class="fa-solid fa-users"></i>
-                        </div>
-
-                        <div>
-
-                            <strong
-                                class="counter"
-                                data-target="2800"
-                                data-suffix="+">
-                                0+
-                            </strong>
-
-                            <span>
-                                People Impacted
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="stat-card">
-
-                        <div class="stat-icon">
-                            <i class="fa-solid fa-people-group"></i>
-                        </div>
+                        <span class="floating-icon">
+                            <i class="fa-solid fa-hands-holding-child"></i>
+                        </span>
 
                         <div>
-
-                            <strong
-                                class="counter"
-                                data-target="3"
-                                data-suffix="+">
-                                0+
-                            </strong>
-
-                            <span>
-                                Communities
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="stat-card">
-
-                        <div class="stat-icon">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
-
-                        <div>
-
-                            <strong
-                                class="counter"
-                                data-target="100"
-                                data-suffix="%">
-                                0%
-                            </strong>
-
-                            <span>
-                                Commitment
-                            </span>
-
+                            <strong>Community</strong>
+                            <small>Mentorship & Impact</small>
                         </div>
 
                     </div>
@@ -462,169 +279,240 @@
 
             </div>
 
+
+            <div class="hero-scroll">
+
+                <span>SCROLL TO EXPLORE</span>
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+            </div>
+
         </section>
 
 
 
-        <!-- =================================================
-             ABOUT
-        ================================================== -->
+        <!-- =====================================================
+             PROFESSIONAL SNAPSHOT
+        ====================================================== -->
 
-        <section class="section about"
-            id="about">
+        <section class="snapshot section">
 
             <div class="container">
 
-                <div class="section-heading reveal">
+                <div class="section-heading centered">
 
-                    <span class="section-label">
-                        ABOUT ROSE
+                    <span class="eyebrow">
+                        PROFESSIONAL SNAPSHOT
                     </span>
 
                     <h2>
-                        A journey built on
-                        <span>care &amp; courage.</span>
+                        More than a profession.
+                        <span>A purpose.</span>
                     </h2>
 
                     <p>
-                        A professional story shaped by healthcare,
-                        resilience, service and continuous learning.
+                        A career shaped by healthcare, service,
+                        mentorship and a commitment to helping others
+                        navigate new opportunities.
                     </p>
 
                 </div>
 
 
-                <div class="about-grid">
+                <div class="snapshot-grid">
+
+                    <article class="snapshot-card">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+
+                        <h3>Healthcare</h3>
+
+                        <p>
+                            Professional experience in nursing and
+                            patient care with a commitment to quality
+                            and compassionate service.
+                        </p>
+
+                    </article>
 
 
-                    <div class="about-image reveal">
+                    <article class="snapshot-card">
 
-                        <div class="image-frame"></div>
+                        <div class="card-icon">
+                            <i class="fa-solid fa-hands-helping"></i>
+                        </div>
 
-                        <img
-                            src="image/profile.jpg"
-                            alt="Rose Muthoni Komarek"
-                            loading="lazy">
+                        <h3>Mentorship</h3>
 
-                        <div class="image-caption">
+                        <p>
+                            Supporting international nurses and
+                            trainees as they navigate professional
+                            opportunities and life in Germany.
+                        </p>
 
-                            <strong>
-                                RMK
-                            </strong>
+                    </article>
+
+
+                    <article class="snapshot-card">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-earth-africa"></i>
+                        </div>
+
+                        <h3>Community</h3>
+
+                        <p>
+                            Creating meaningful connections between
+                            African healthcare professionals and
+                            opportunities in Germany.
+                        </p>
+
+                    </article>
+
+
+                    <article class="snapshot-card">
+
+                        <div class="card-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                        <h3>Leadership</h3>
+
+                        <p>
+                            Building initiatives that encourage
+                            professional development, integration
+                            and collaboration.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <section class="about section" id="about">
+
+            <div class="container about-grid">
+
+
+                <div class="about-image-wrapper">
+
+                    <div class="about-image-decoration"></div>
+
+                    <img
+                        src="./image/profile.jpg"
+                        alt="Rose Muthoni Komarek in professional attire"
+                        class="about-image"
+                    >
+
+
+                    <div class="about-badge">
+
+                        <span class="badge-number">
+                            2008
+                        </span>
+
+                        <span class="badge-text">
+                            Beginning of her
+                            German journey
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-content">
+
+                    <span class="eyebrow">
+                        ABOUT ROSE
+                    </span>
+
+                    <h2>
+                        A journey rooted in
+                        <span>service and resilience.</span>
+                    </h2>
+
+
+                    <p class="lead">
+                        Rose Muthoni Komarek's professional journey
+                        combines healthcare, cultural integration,
+                        mentorship and community leadership.
+                    </p>
+
+
+                    <p>
+                        Her journey in Germany began in 2008 as an
+                        au pair. Over the years, she developed a
+                        professional path in healthcare while also
+                        becoming increasingly involved in supporting
+                        other international professionals.
+                    </p>
+
+
+                    <p>
+                        Today, her work reaches beyond clinical
+                        practice. Through mentorship, professional
+                        networking and community initiatives, she
+                        helps create connections and opportunities
+                        for African healthcare professionals and
+                        trainees.
+                    </p>
+
+
+                    <div class="about-highlights">
+
+                        <div class="highlight">
+
+                            <i class="fa-solid fa-circle-check"></i>
 
                             <span>
-                                Care • Compassion • Excellence
+                                Healthcare Professional
                             </span>
 
                         </div>
 
-                    </div>
+
+                        <div class="highlight">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>
+                                ICW Wound Expert
+                            </span>
+
+                        </div>
 
 
+                        <div class="highlight">
 
-                    <div class="about-content reveal">
+                            <i class="fa-solid fa-circle-check"></i>
 
-                        <span class="mini-label">
-                            HER STORY
-                        </span>
+                            <span>
+                                Integration Coach
+                            </span>
 
-                        <h3>
-                            Healthcare professional,
-                            mentor and community advocate.
-                        </h3>
-
-                        <p>
-                            Rose Muthoni Komarek represents a
-                            growing generation of African healthcare
-                            professionals contributing their skills,
-                            experience and perspective within Germany.
-                        </p>
-
-                        <p>
-                            Her professional journey reflects
-                            dedication to patient-centred care,
-                            personal development, cultural connection
-                            and meaningful service to others.
-                        </p>
+                        </div>
 
 
-                        <div class="feature-grid">
+                        <div class="highlight">
 
+                            <i class="fa-solid fa-circle-check"></i>
 
-                            <article class="feature-card">
-
-                                <i class="fa-solid fa-heart-pulse"></i>
-
-                                <div>
-
-                                    <h4>
-                                        Compassion
-                                    </h4>
-
-                                    <p>
-                                        People-centred care and empathy.
-                                    </p>
-
-                                </div>
-
-                            </article>
-
-
-                            <article class="feature-card">
-
-                                <i class="fa-solid fa-user-graduate"></i>
-
-                                <div>
-
-                                    <h4>
-                                        Growth
-                                    </h4>
-
-                                    <p>
-                                        Continuous professional learning.
-                                    </p>
-
-                                </div>
-
-                            </article>
-
-
-                            <article class="feature-card">
-
-                                <i class="fa-solid fa-people-group"></i>
-
-                                <div>
-
-                                    <h4>
-                                        Community
-                                    </h4>
-
-                                    <p>
-                                        Supporting and inspiring others.
-                                    </p>
-
-                                </div>
-
-                            </article>
-
-
-                            <article class="feature-card">
-
-                                <i class="fa-solid fa-star"></i>
-
-                                <div>
-
-                                    <h4>
-                                        Excellence
-                                    </h4>
-
-                                    <p>
-                                        Commitment to professional standards.
-                                    </p>
-
-                                </div>
-
-                            </article>
+                            <span>
+                                Mentor for International Nurses
+                            </span>
 
                         </div>
 
@@ -638,25 +526,29 @@
 
 
 
-        <!-- =================================================
+        <!-- =====================================================
              JOURNEY
-        ================================================== -->
+        ====================================================== -->
 
-        <section class="section journey"
-            id="journey">
+        <section class="journey section" id="journey">
 
             <div class="container">
 
-                <div class="section-heading centered reveal">
+                <div class="section-heading">
 
-                    <span class="section-label">
-                        PROFESSIONAL JOURNEY
+                    <span class="eyebrow">
+                        HER JOURNEY
                     </span>
 
                     <h2>
-                        Experience that
-                        <span>continues to evolve.</span>
+                        From a new beginning
+                        <span>to meaningful impact.</span>
                     </h2>
+
+                    <p>
+                        Milestones that shaped Rose's professional
+                        and community journey in Germany.
+                    </p>
 
                 </div>
 
@@ -664,28 +556,27 @@
                 <div class="timeline">
 
 
-                    <article class="timeline-item reveal">
+                    <article class="timeline-item">
 
-                        <div class="timeline-marker">
-
-                            <i class="fa-solid fa-graduation-cap"></i>
-
+                        <div class="timeline-year">
+                            2008
                         </div>
 
-                        <div class="timeline-card">
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
 
                             <span class="timeline-label">
-                                EDUCATION
+                                A NEW BEGINNING
                             </span>
 
                             <h3>
-                                Nursing Foundation
+                                Arrival in Germany
                             </h3>
 
                             <p>
-                                A foundation in nursing education,
-                                clinical knowledge and professional
-                                responsibility.
+                                Rose began a new chapter in Germany
+                                after arriving as an au pair.
                             </p>
 
                         </div>
@@ -693,28 +584,29 @@
                     </article>
 
 
-                    <article class="timeline-item reveal">
+                    <article class="timeline-item">
 
-                        <div class="timeline-marker">
-
-                            <i class="fa-solid fa-hospital"></i>
-
+                        <div class="timeline-year">
+                            2014
                         </div>
 
-                        <div class="timeline-card">
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
 
                             <span class="timeline-label">
-                                PROFESSIONAL EXPERIENCE
+                                HEALTHCARE
                             </span>
 
                             <h3>
-                                Clinical Practice
+                                Nursing qualification
                             </h3>
 
                             <p>
-                                Developing practical experience
-                                while supporting patients and
-                                multidisciplinary healthcare teams.
+                                She completed her training as a
+                                health and nursing professional,
+                                beginning her professional career
+                                in healthcare.
                             </p>
 
                         </div>
@@ -722,56 +614,88 @@
                     </article>
 
 
-                    <article class="timeline-item reveal">
+                    <article class="timeline-item">
 
-                        <div class="timeline-marker">
-
-                            <i class="fa-solid fa-earth-europe"></i>
-
+                        <div class="timeline-year">
+                            2019
                         </div>
 
-                        <div class="timeline-card">
+                        <div class="timeline-dot"></div>
 
-                            <span class="timeline-label">
-                                GERMANY
-                            </span>
-
-                            <h3>
-                                International Professional Journey
-                            </h3>
-
-                            <p>
-                                Continuing professional development
-                                and contributing to healthcare in
-                                Germany.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="timeline-item reveal">
-
-                        <div class="timeline-marker">
-
-                            <i class="fa-solid fa-people-group"></i>
-
-                        </div>
-
-                        <div class="timeline-card">
+                        <div class="timeline-content">
 
                             <span class="timeline-label">
                                 COMMUNITY
                             </span>
 
                             <h3>
-                                Mentorship &amp; Impact
+                                African Nurses/Pfleger in Germany
                             </h3>
 
                             <p>
-                                Encouraging connection, personal
-                                growth and positive community impact.
+                                Rose founded the African Nurses/Pfleger
+                                in Germany network to connect and
+                                support African healthcare professionals
+                                in Germany.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-year">
+                            2023
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-label">
+                                AFRICAN EXPERTS
+                            </span>
+
+                            <h3>
+                                Professional opportunity building
+                            </h3>
+
+                            <p>
+                                Rose became part of African Experts,
+                                helping connect motivated people from
+                                Africa with professional and training
+                                opportunities in Germany.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-year">
+                            TODAY
+                        </div>
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-label">
+                                CONTINUING THE JOURNEY
+                            </span>
+
+                            <h3>
+                                Healthcare, mentorship & leadership
+                            </h3>
+
+                            <p>
+                                Her work continues across healthcare,
+                                mentorship, integration and community
+                                building.
                             </p>
 
                         </div>
@@ -786,24 +710,23 @@
 
 
 
-        <!-- =================================================
+        <!-- =====================================================
              EXPERTISE
-        ================================================== -->
+        ====================================================== -->
 
-        <section class="section expertise"
-            id="expertise">
+        <section class="expertise section" id="expertise">
 
             <div class="container">
 
-                <div class="section-heading centered reveal">
+                <div class="section-heading centered">
 
-                    <span class="section-label">
+                    <span class="eyebrow">
                         EXPERTISE
                     </span>
 
                     <h2>
-                        Values that define
-                        <span>her work.</span>
+                        Knowledge that creates
+                        <span>lasting value.</span>
                     </h2>
 
                 </div>
@@ -812,81 +735,137 @@
                 <div class="expertise-grid">
 
 
-                    <article class="expertise-card reveal">
+                    <article class="expertise-card">
 
                         <div class="expertise-number">
                             01
                         </div>
 
-                        <i class="fa-solid fa-user-nurse"></i>
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-user-nurse"></i>
+                        </div>
 
                         <h3>
-                            Nursing &amp; Care
+                            Nursing & Healthcare
                         </h3>
 
                         <p>
-                            Patient-centred healthcare delivered
-                            with professionalism and compassion.
+                            Professional experience grounded in
+                            healthcare, patient care and nursing
+                            practice.
                         </p>
 
                     </article>
 
 
-                    <article class="expertise-card reveal">
+                    <article class="expertise-card">
 
                         <div class="expertise-number">
                             02
                         </div>
 
-                        <i class="fa-solid fa-users"></i>
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-bandage"></i>
+                        </div>
+
+                        <h3>
+                            Wound Care
+                        </h3>
+
+                        <p>
+                            Specialist knowledge as an ICW-qualified
+                            wound expert.
+                        </p>
+
+                    </article>
+
+
+                    <article class="expertise-card">
+
+                        <div class="expertise-number">
+                            03
+                        </div>
+
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-people-arrows"></i>
+                        </div>
+
+                        <h3>
+                            Integration Coaching
+                        </h3>
+
+                        <p>
+                            Helping international professionals
+                            understand and navigate life and work
+                            in Germany.
+                        </p>
+
+                    </article>
+
+
+                    <article class="expertise-card">
+
+                        <div class="expertise-number">
+                            04
+                        </div>
+
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
 
                         <h3>
                             Mentorship
                         </h3>
 
                         <p>
-                            Supporting people through knowledge,
-                            encouragement and shared experience.
+                            Supporting international nurses and
+                            trainees through professional development
+                            and transition.
                         </p>
 
                     </article>
 
 
-                    <article class="expertise-card reveal">
+                    <article class="expertise-card">
 
                         <div class="expertise-number">
-                            03
+                            05
                         </div>
 
-                        <i class="fa-solid fa-globe"></i>
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
 
                         <h3>
-                            Cultural Connection
+                            Community Building
                         </h3>
 
                         <p>
-                            Connecting African experiences with
-                            professional life in Germany.
+                            Creating professional networks that
+                            encourage connection, support and exchange.
                         </p>
 
                     </article>
 
 
-                    <article class="expertise-card reveal">
+                    <article class="expertise-card">
 
                         <div class="expertise-number">
-                            04
+                            06
                         </div>
 
-                        <i class="fa-solid fa-lightbulb"></i>
+                        <div class="expertise-icon">
+                            <i class="fa-solid fa-compass"></i>
+                        </div>
 
                         <h3>
-                            Leadership
+                            Professional Guidance
                         </h3>
 
                         <p>
-                            Encouraging responsibility, growth and
-                            positive influence.
+                            Helping people identify pathways toward
+                            education, employment and professional
+                            opportunity.
                         </p>
 
                     </article>
@@ -899,120 +878,131 @@
 
 
 
-        <!-- =================================================
-             ORGANIZATIONS
-        ================================================== -->
+        <!-- =====================================================
+             IMPACT
+        ====================================================== -->
 
-        <section class="section organizations"
-            id="organizations">
+        <section class="impact section" id="impact">
 
             <div class="container">
 
-                <div class="section-heading centered reveal">
 
-                    <span class="section-label">
-                        PROFESSIONAL CONNECTIONS
-                    </span>
+                <div class="impact-intro">
 
-                    <h2>
-                        Organizations &amp;
-                        <span>professional links.</span>
-                    </h2>
+                    <div class="section-heading">
+
+                        <span class="eyebrow">
+                            COMMUNITY & IMPACT
+                        </span>
+
+                        <h2>
+                            Connecting people
+                            <span>across borders.</span>
+                        </h2>
+
+                    </div>
+
 
                     <p>
-                        Verified organizations and professional
-                        platforms can be connected here.
+                        Rose's work extends beyond individual
+                        professional development. It is also about
+                        building communities where people can find
+                        information, mentorship, support and new
+                        possibilities.
                     </p>
 
                 </div>
 
 
-                <div class="organization-grid">
+                <div class="impact-grid">
 
 
-                    <article class="organization-card reveal">
+                    <article class="impact-card featured">
 
-                        <div class="organization-icon">
+                        <div class="impact-icon">
+                            <i class="fa-solid fa-people-group"></i>
+                        </div>
+
+                        <span class="impact-label">
+                            FOUNDED 2019
+                        </span>
+
+                        <h3>
+                            African Nurses/Pfleger in Germany
+                        </h3>
+
+                        <p>
+                            A professional network created to bring
+                            African nurses and healthcare professionals
+                            together in Germany.
+                        </p>
+
+                        <a
+                            href="https://www.linkedin.com/in/rose-komarek-569296222/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-link"
+                        >
+                            Learn more
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </article>
+
+
+                    <article class="impact-card">
+
+                        <div class="impact-icon">
                             <i class="fa-solid fa-building"></i>
                         </div>
 
+                        <span class="impact-label">
+                            PROFESSIONAL ORGANIZATION
+                        </span>
+
                         <h3>
-                            Employer
+                            African Experts
                         </h3>
 
                         <p>
-                            Official employer or healthcare
-                            organization.
+                            An organization connecting motivated
+                            people from Africa with education,
+                            training and professional opportunities
+                            in Germany.
                         </p>
 
-                        <a href="#"
-                            class="text-link"
+                        <a
+                            href="https://www.africanexperts.de/"
                             target="_blank"
-                            rel="noopener">
-
-                            Visit Organization
-
+                            rel="noopener noreferrer"
+                            class="text-link"
+                        >
+                            Visit African Experts
                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
                         </a>
 
                     </article>
 
 
-                    <article class="organization-card reveal">
+                    <article class="impact-card">
 
-                        <div class="organization-icon">
-                            <i class="fa-brands fa-linkedin-in"></i>
+                        <div class="impact-icon">
+                            <i class="fa-solid fa-handshake"></i>
                         </div>
 
+                        <span class="impact-label">
+                            COLLABORATION
+                        </span>
+
                         <h3>
-                            LinkedIn
+                            African Health Care Professionals
                         </h3>
 
                         <p>
-                            Professional profile and career
-                            information.
+                            Supporting professional connection,
+                            collaboration and community among
+                            African healthcare professionals in Germany.
                         </p>
-
-                        <a href="#"
-                            class="text-link"
-                            target="_blank"
-                            rel="noopener">
-
-                            View Profile
-
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                        </a>
-
-                    </article>
-
-
-                    <article class="organization-card reveal">
-
-                        <div class="organization-icon">
-                            <i class="fa-solid fa-network-wired"></i>
-                        </div>
-
-                        <h3>
-                            Professional Network
-                        </h3>
-
-                        <p>
-                            Community, association or professional
-                            network.
-                        </p>
-
-                        <a href="#"
-                            class="text-link"
-                            target="_blank"
-                            rel="noopener">
-
-                            Explore
-
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-                        </a>
 
                     </article>
 
@@ -1024,18 +1014,18 @@
 
 
 
-        <!-- =================================================
+        <!-- =====================================================
              GALLERY
-        ================================================== -->
+        ====================================================== -->
 
-        <section class="section gallery"
-            id="gallery">
+        <section class="gallery section" id="gallery">
 
             <div class="container">
 
-                <div class="section-heading centered reveal">
 
-                    <span class="section-label">
+                <div class="section-heading">
+
+                    <span class="eyebrow">
                         GALLERY
                     </span>
 
@@ -1045,8 +1035,8 @@
                     </h2>
 
                     <p>
-                        A selection of professional and community
-                        moments.
+                        A visual collection celebrating Rose's
+                        professional journey, community and impact.
                     </p>
 
                 </div>
@@ -1056,19 +1046,23 @@
 
 
                     <button
-                        class="gallery-item gallery-large reveal"
+                        class="gallery-item gallery-large"
                         type="button"
-                        data-image="image/gallery1.jpg"
-                        data-alt="Rose Komarek gallery photograph">
+                        data-image="./image/gallery 1.png"
+                        aria-label="Open gallery image 1"
+                    >
 
                         <img
-                            src="image/gallery1.jpg"
-                            alt="Rose Komarek"
-                            loading="lazy">
+                            src="./image/gallery 1.png"
+                            alt="Rose Komarek gallery photograph"
+                            loading="lazy"
+                        >
 
                         <span class="gallery-overlay">
 
-                            <i class="fa-solid fa-expand"></i>
+                            <span>
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
 
                         </span>
 
@@ -1076,19 +1070,23 @@
 
 
                     <button
-                        class="gallery-item reveal"
+                        class="gallery-item"
                         type="button"
-                        data-image="image/gallery2.jpg"
-                        data-alt="Rose Komarek gallery photograph">
+                        data-image="./image/gallery 2.png"
+                        aria-label="Open gallery image 2"
+                    >
 
                         <img
-                            src="image/gallery2.jpg"
-                            alt="Rose Komarek"
-                            loading="lazy">
+                            src="./image/gallery 2.png"
+                            alt="Rose Komarek gallery photograph"
+                            loading="lazy"
+                        >
 
                         <span class="gallery-overlay">
 
-                            <i class="fa-solid fa-expand"></i>
+                            <span>
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
 
                         </span>
 
@@ -1096,19 +1094,23 @@
 
 
                     <button
-                        class="gallery-item reveal"
+                        class="gallery-item"
                         type="button"
-                        data-image="image/gallery3.jpg"
-                        data-alt="Rose Komarek gallery photograph">
+                        data-image="./image/gallery 3.png"
+                        aria-label="Open gallery image 3"
+                    >
 
                         <img
-                            src="image/gallery3.jpg"
-                            alt="Rose Komarek"
-                            loading="lazy">
+                            src="./image/gallery 3.png"
+                            alt="Rose Komarek gallery photograph"
+                            loading="lazy"
+                        >
 
                         <span class="gallery-overlay">
 
-                            <i class="fa-solid fa-expand"></i>
+                            <span>
+                                <i class="fa-solid fa-expand"></i>
+                            </span>
 
                         </span>
 
@@ -1122,140 +1124,87 @@
 
 
 
-        <!-- =================================================
-             TESTIMONIALS
-        ================================================== -->
+        <!-- =====================================================
+             LANGUAGES
+        ====================================================== -->
 
-        <section class="section testimonials"
-            id="testimonials">
+        <section class="languages section">
 
-            <div class="container">
+            <div class="container languages-grid">
 
-                <div class="section-heading centered reveal">
 
-                    <span class="section-label">
-                        TESTIMONIALS
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        CULTURAL CONNECTION
                     </span>
 
                     <h2>
-                        Words from the
-                        <span>community.</span>
+                        Bridging languages,
+                        <span>cultures and people.</span>
                     </h2>
 
                     <p>
-                        Genuine testimonials can be added here once
-                        approved by the people providing them.
+                        Communication and cultural understanding
+                        are an important part of Rose's professional
+                        and community work.
                     </p>
 
                 </div>
 
 
-                <div class="testimonial-grid">
+                <div class="language-list">
+
+                    <div class="language-item">
+
+                        <span class="language-name">
+                            Deutsch
+                        </span>
+
+                        <span class="language-level">
+                            Professional
+                        </span>
+
+                    </div>
 
 
-                    <article class="testimonial-card reveal">
+                    <div class="language-item">
 
-                        <div class="quote-icon">
-                            <i class="fa-solid fa-quote-left"></i>
-                        </div>
+                        <span class="language-name">
+                            English
+                        </span>
 
-                        <p>
-                            Rose demonstrates genuine commitment,
-                            kindness and willingness to support
-                            those around her.
-                        </p>
+                        <span class="language-level">
+                            Fluent
+                        </span>
 
-                        <div class="testimonial-person">
-
-                            <div class="testimonial-avatar">
-                                R
-                            </div>
-
-                            <div>
-
-                                <strong>
-                                    Community Member
-                                </strong>
-
-                                <span>
-                                    Testimonial
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
+                    </div>
 
 
-                    <article class="testimonial-card reveal">
+                    <div class="language-item">
 
-                        <div class="quote-icon">
-                            <i class="fa-solid fa-quote-left"></i>
-                        </div>
+                        <span class="language-name">
+                            Kiswahili
+                        </span>
 
-                        <p>
-                            Her professional journey reflects
-                            resilience, dedication and a strong
-                            desire to make a positive difference.
-                        </p>
+                        <span class="language-level">
+                            Fluent
+                        </span>
 
-                        <div class="testimonial-person">
-
-                            <div class="testimonial-avatar">
-                                C
-                            </div>
-
-                            <div>
-
-                                <strong>
-                                    Colleague
-                                </strong>
-
-                                <span>
-                                    Testimonial
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
+                    </div>
 
 
-                    <article class="testimonial-card reveal">
+                    <div class="language-item">
 
-                        <div class="quote-icon">
-                            <i class="fa-solid fa-quote-left"></i>
-                        </div>
+                        <span class="language-name">
+                            Kikuyu
+                        </span>
 
-                        <p>
-                            A thoughtful professional who values
-                            people, growth and meaningful
-                            relationships.
-                        </p>
+                        <span class="language-level">
+                            Native / Bilingual
+                        </span>
 
-                        <div class="testimonial-person">
-
-                            <div class="testimonial-avatar">
-                                P
-                            </div>
-
-                            <div>
-
-                                <strong>
-                                    Professional Contact
-                                </strong>
-
-                                <span>
-                                    Testimonial
-                                </span>
-
-                            </div>
-
-                        </div>
-
-                    </article>
+                    </div>
 
                 </div>
 
@@ -1265,46 +1214,180 @@
 
 
 
-        <!-- =================================================
-             CTA
-        ================================================== -->
+        <!-- =====================================================
+             CONTACT / CONNECT
+        ====================================================== -->
 
-        <section class="cta">
+        <section class="contact section" id="contact">
 
             <div class="container">
 
-                <div class="cta-box reveal">
 
-                    <span class="section-label">
-                        CONNECT
-                    </span>
+                <div class="contact-card">
 
-                    <h2>
-                        Let's connect,
-                        <span>collaborate</span>
-                        and grow.
-                    </h2>
 
-                    <p>
-                        For professional enquiries, collaborations,
-                        speaking opportunities or community
-                        connections.
-                    </p>
+                    <div class="contact-content">
 
-                    <a href="contact.html"
-                        class="btn btn-light">
+                        <span class="eyebrow">
+                            LET'S CONNECT
+                        </span>
 
-                        Contact Rose
+                        <h2>
+                            Follow the journey.
+                            <span>Stay connected.</span>
+                        </h2>
 
-                        <i class="fa-solid fa-arrow-right"></i>
+                        <p>
+                            Discover Rose's professional journey,
+                            community initiatives and ongoing work
+                            across healthcare, mentorship and
+                            professional development.
+                        </p>
 
-                    </a>
+                    </div>
+
+
+                    <div class="contact-links">
+
+
+                        <a
+                            href="https://www.linkedin.com/in/rose-komarek-569296222/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-link"
+                        >
+
+                            <span class="social-icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </span>
+
+                            <span class="social-details">
+
+                                <strong>LinkedIn</strong>
+
+                                <small>
+                                    Professional profile
+                                </small>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://www.instagram.com/rose.peters.54/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-link"
+                        >
+
+                            <span class="social-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </span>
+
+                            <span class="social-details">
+
+                                <strong>Instagram</strong>
+
+                                <small>
+                                    Follow her journey
+                                </small>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://www.facebook.com/rose.peters.54"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-link"
+                        >
+
+                            <span class="social-icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </span>
+
+                            <span class="social-details">
+
+                                <strong>Facebook</strong>
+
+                                <small>
+                                    Connect on Facebook
+                                </small>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://vm.tiktok.com/ZS9hGKvCPSj4f-oaMj1/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-link"
+                        >
+
+                            <span class="social-icon">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </span>
+
+                            <span class="social-details">
+
+                                <strong>TikTok</strong>
+
+                                <small>
+                                    Follow her content
+                                </small>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+
+                        <a
+                            href="https://www.africanexperts.de/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="social-link organization-link"
+                        >
+
+                            <span class="social-icon">
+                                <i class="fa-solid fa-building"></i>
+                            </span>
+
+                            <span class="social-details">
+
+                                <strong>African Experts</strong>
+
+                                <small>
+                                    Professional organization
+                                </small>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
 
                 </div>
 
             </div>
 
         </section>
+
+
 
     </main>
 
@@ -1314,96 +1397,107 @@
          FOOTER
     ====================================================== -->
 
-    <footer class="footer">
+    <footer class="site-footer">
 
-        <div class="container">
-
-            <div class="footer-grid">
+        <div class="container footer-grid">
 
 
-                <div class="footer-brand">
+            <div class="footer-brand">
 
-                    <img
-                        src="image/logo.png"
-                        alt="RMK Logo"
-                        class="footer-logo">
+                <img
+                    src="./image/logo.png"
+                    alt="Rose Komarek logo"
+                >
 
-                    <h3>
-                        Rose Muthoni Komarek
-                    </h3>
+                <p>
+                    Healthcare • Compassion • Excellence • Empowerment
+                </p>
 
-                    <p>
-                        African nurse, healthcare professional,
-                        mentor and community advocate in Germany.
-                    </p>
-
-                </div>
+            </div>
 
 
-                <div class="footer-column">
+            <div class="footer-navigation">
 
-                    <h4>
-                        Explore
-                    </h4>
+                <h3>
+                    Explore
+                </h3>
 
-                    <a href="#about">
-                        About
+                <a href="#about">About</a>
+
+                <a href="#journey">Journey</a>
+
+                <a href="#expertise">Expertise</a>
+
+                <a href="#gallery">Gallery</a>
+
+                <a href="#contact">Connect</a>
+
+            </div>
+
+
+            <div class="footer-social">
+
+                <h3>
+                    Follow
+                </h3>
+
+                <div class="footer-social-links">
+
+                    <a
+                        href="https://www.linkedin.com/in/rose-komarek-569296222/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="fa-brands fa-linkedin-in"></i>
                     </a>
 
-                    <a href="#journey">
-                        Journey
+                    <a
+                        href="https://www.instagram.com/rose.peters.54/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
 
-                    <a href="#expertise">
-                        Expertise
+                    <a
+                        href="https://www.facebook.com/rose.peters.54"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                    >
+                        <i class="fa-brands fa-facebook-f"></i>
                     </a>
 
-                    <a href="#gallery">
-                        Gallery
-                    </a>
-
-                </div>
-
-
-                <div class="footer-column">
-
-                    <h4>
-                        Connect
-                    </h4>
-
-                    <a href="contact.html">
-                        Contact
-                    </a>
-
-                    <a href="#">
-                        LinkedIn
-                    </a>
-
-                    <a href="#">
-                        Instagram
-                    </a>
-
-                    <a href="#">
-                        TikTok
+                    <a
+                        href="https://vm.tiktok.com/ZS9hGKvCPSj4f-oaMj1/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="TikTok"
+                    >
+                        <i class="fa-brands fa-tiktok"></i>
                     </a>
 
                 </div>
 
             </div>
 
+        </div>
 
-            <div class="footer-bottom">
+
+        <div class="footer-bottom">
+
+            <div class="container">
 
                 <p>
-                    ©
-                    <span id="currentYear"></span>
-                    Rose Muthoni Komarek.
-                    All Rights Reserved.
+                    © <span id="currentYear"></span>
+                    Rose Muthoni Komarek. All rights reserved.
                 </p>
 
-                <span>
-                    Care • Compassion • Excellence
-                </span>
+                <p>
+                    Built with purpose.
+                </p>
 
             </div>
 
@@ -1414,349 +1508,55 @@
 
 
     <!-- =====================================================
-         LIGHTBOX
+         GALLERY LIGHTBOX
     ====================================================== -->
 
     <div
         class="lightbox"
         id="lightbox"
-        aria-hidden="true">
+        aria-hidden="true"
+    >
 
         <button
             class="lightbox-close"
             id="lightboxClose"
             type="button"
-            aria-label="Close gallery">
-
+            aria-label="Close gallery"
+        >
             <i class="fa-solid fa-xmark"></i>
-
         </button>
 
 
         <img
             src=""
             alt=""
-            id="lightboxImage">
+            id="lightboxImage"
+            class="lightbox-image"
+        >
 
     </div>
 
 
 
-    <!-- JAVASCRIPT -->
+    <!-- =====================================================
+         BACK TO TOP
+    ====================================================== -->
 
+    <button
+        class="back-to-top"
+        id="backToTop"
+        type="button"
+        aria-label="Back to top"
+    >
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+
+
+    <!-- Main JavaScript -->
     <script src="script.js"></script>
 
 </body>
-
-</html> 
-<!-- =========================
-     CONTACT / CONNECT SECTION
-========================= -->
-<section class="contact-section" id="contact">
-
-    <div class="contact-container">
-
-        <!-- Section Header -->
-        <div class="section-heading contact-heading">
-
-            <span class="section-tag">CONNECT</span>
-
-            <h2>
-                Let's <span>Connect</span>
-            </h2>
-
-            <p>
-                Follow Rose's professional journey, connect with her
-                online, or learn more about her work with African Experts.
-            </p>
-
-        </div>
-
-
-        <!-- Contact Cards -->
-        <div class="contact-grid">
-
-
-            <!-- Professional Profile -->
-            <div class="contact-card featured-contact">
-
-                <div class="contact-card-icon">
-                    <i class="fa-solid fa-user-tie"></i>
-                </div>
-
-                <div class="contact-card-content">
-
-                    <span class="contact-label">
-                        PROFESSIONAL PROFILE
-                    </span>
-
-                    <h3>
-                        Connect with Rose
-                    </h3>
-
-                    <p>
-                        Explore Rose's professional experience,
-                        career journey and professional network.
-                    </p>
-
-                    <a
-                        href="https://www.linkedin.com/in/rose-komarek-569296222/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-button"
-                    >
-                        Visit LinkedIn
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- African Experts -->
-            <div class="contact-card company-contact">
-
-                <div class="contact-card-icon">
-                    <i class="fa-solid fa-building"></i>
-                </div>
-
-                <div class="contact-card-content">
-
-                    <span class="contact-label">
-                        PROFESSIONAL AFFILIATION
-                    </span>
-
-                    <h3>
-                        African Experts
-                    </h3>
-
-                    <p>
-                        Learn more about African Experts and its work
-                        connecting African nursing professionals and
-                        trainees with opportunities in Germany.
-                    </p>
-
-                    <a
-                        href="https://www.africanexperts.de/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-button"
-                    >
-                        Visit African Experts
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Social Platforms -->
-        <div class="social-area">
-
-            <div class="social-heading">
-
-                <span class="section-tag">
-                    SOCIAL PLATFORMS
-                </span>
-
-                <h3>
-                    Find Rose <span>Online</span>
-                </h3>
-
-                <p>
-                    Follow, connect and stay updated through her
-                    social platforms.
-                </p>
-
-            </div>
-
-
-            <div class="social-grid">
-
-
-                <!-- LinkedIn -->
-                <a
-                    href="https://www.linkedin.com/in/rose-komarek-569296222/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-card linkedin"
-                    aria-label="Visit Rose Komarek on LinkedIn"
-                >
-
-                    <div class="social-icon">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-
-                    <div class="social-info">
-
-                        <span>
-                            PROFESSIONAL
-                        </span>
-
-                        <h4>
-                            LinkedIn
-                        </h4>
-
-                        <p>
-                            Professional network
-                        </p>
-
-                    </div>
-
-                    <div class="social-arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                </a>
-
-
-                <!-- Instagram -->
-                <a
-                    href="https://www.instagram.com/rose.peters.54/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-card instagram"
-                    aria-label="Visit Rose on Instagram"
-                >
-
-                    <div class="social-icon">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-
-                    <div class="social-info">
-
-                        <span>
-                            SOCIAL
-                        </span>
-
-                        <h4>
-                            Instagram
-                        </h4>
-
-                        <p>
-                            Follow her journey
-                        </p>
-
-                    </div>
-
-                    <div class="social-arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                </a>
-
-
-                <!-- Facebook -->
-                <a
-                    href="https://www.facebook.com/rose.peters.54"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-card facebook"
-                    aria-label="Visit Rose on Facebook"
-                >
-
-                    <div class="social-icon">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </div>
-
-                    <div class="social-info">
-
-                        <span>
-                            SOCIAL
-                        </span>
-
-                        <h4>
-                            Facebook
-                        </h4>
-
-                        <p>
-                            Connect on Facebook
-                        </p>
-
-                    </div>
-
-                    <div class="social-arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                </a>
-
-
-                <!-- TikTok -->
-                <a
-                    href="https://vm.tiktok.com/ZS9hGKvCPSj4f-oaMj1/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="social-card tiktok"
-                    aria-label="Visit Rose on TikTok"
-                >
-
-                    <div class="social-icon">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </div>
-
-                    <div class="social-info">
-
-                        <span>
-                            SOCIAL
-                        </span>
-
-                        <h4>
-                            TikTok
-                        </h4>
-
-                        <p>
-                            Watch her content
-                        </p>
-
-                    </div>
-
-                    <div class="social-arrow">
-                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                    </div>
-
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- Company Link -->
-        <div class="company-link-box">
-
-            <div class="company-link-logo">
-                <span>AE</span>
-            </div>
-
-            <div class="company-link-text">
-
-                <span>
-                    PROFESSIONAL AFFILIATION
-                </span>
-
-                <strong>
-                    African Experts Vermittlungsagentur
-                </strong>
-
-            </div>
-
-            <a
-                href="https://www.africanexperts.de/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit African Experts official website"
-            >
-                Visit Website
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
+</html>
